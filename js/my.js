@@ -27,6 +27,20 @@ $(".icon-collapse-left").click(function(){
 	$(this).prev().toggle();
 	$(this).toggleClass('rotate2');
 });
+/*点击跟随*/
+function changewidth(){
+    var a = $(".left").css("width");
+    $(".box").css({
+        paddingLeft: a
+    });
+    $(".left").css({
+        marginLeft:"-"+ a
+    });
+}
+changewidth();
+$(".icon-collapse-left,.icon-unfold").click(function(){
+    changewidth();
+});
 /*调用光标函数*/
 $('[data-toggle="tooltip"]').tooltip();
 /*外部引用图1*/

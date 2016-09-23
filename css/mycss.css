@@ -3,7 +3,7 @@
 	margin: 0px;
 }
 body{
-	overflow: hidden;
+	 overflow: hidden; 
 }
 /* 头部 */
 .header{
@@ -206,7 +206,15 @@ body{
 	top: 45%;
 	right:50px;
 	z-index: 99;
-	background-color: #fff;
+	width:30px;
+	height:70px;
+	line-height:70px;
+	background-color:#fff;
+	border-top-left-radius:50%;
+	border-bottom-left-radius:50%;
+}
+.icon-collapse-left:hover{
+	text-align: left;
 }
  .clear::after{
 	content: "";
@@ -215,24 +223,29 @@ body{
 	height: 0px;
 	visibility: hidden;
 } 
-.rotate2{
+.rotate2:before{
 	transform: rotateY(180deg);
 	position: absolute;
-	top:43%;
-	right:15px;
+	top:45%;
+	right:20px;
+	background-color:#D9DEE4;
 }
 /* 中心内容 */
+.box{
+	width: 100%;
+}
 .center{
-	width: 78.5%;
+	width: 100%;
 	height: 1000px;
 	float: left;
-	overflow: auto;
+	overflow: auto; 
+	padding-left: 40px;
 }
 .center div{
 	display: inline-block;
 }
-.box{
-	width: 100%;
-}
+
+
+
 
 
